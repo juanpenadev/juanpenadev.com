@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap">
     <title>Juan Pena Resume</title>
 </head>
 <body>
@@ -16,15 +15,15 @@
             <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
             <nav>
             <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
-                <ul class="primery-nav">
-                    <li class="current"><a href="">Home</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Main Projects</a></li>
+                <ul class="primary-nav">
+                    <li class="current"><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Main Projects</a></li>
                 </ul>
                 
                 <ul class="secondary-nav">
-                    <li><a href="">Contact</a></li>
-                    <li class="go-mremium-cta"><a href="">Go Premium</a></li><!-- ctl class reference "call to action" -->
+                    <li><a href="#contant">Contact</a></li>
+                    <li class="contact-now-cta"><a href="#">Check all my projects</a></li><!-- ctl class reference "call to action" -->
                 </ul>
             </nav>
         </div>
@@ -48,6 +47,7 @@
 
     <section class="skills-section">
         <div class="container">
+            <h2 id="skills">Skills</h2>
             <ul class="skills-list">
                 <li>HTML5</li>
                 <li>CSS3</li>
@@ -55,25 +55,26 @@
                 <li>MERN STACK (Mongodb, Express, Reactjs, Nodejs)</li>
                 <li>SQL</li>
             </ul>
-            <img src="images/illustration.svg" alt="illustration">
+            <img src="images/coding.png" alt="illustration">
         </div>
     </section>
 
     <section class="projects-section">
         <div class="container">
-            <ul>
+           <h2 id="projects">Projects</h2>
+            <ul >
                 <li>
-                    <img src="images/person.jpg" alt="">
+                    <img src="images/illustration.svg" alt="">
                     <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aperiam inventore cum numquam. Harum dolore quidem itaque praesentium cumque voluptas deleniti blanditiis, voluptatum velit voluptatem odio ducimus quisquam quas ratione?</blockquote>
                     <cite>- Jane Doe</cite>
                 </li>
                 <li>
-                    <img src="images/person.jpg" alt="">
+                    <img src="images/illustration.svg" alt="">
                     <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aperiam inventore cum numquam. Harum dolore quidem itaque praesentium cumque voluptas deleniti blanditiis, voluptatum velit voluptatem odio ducimus quisquam quas ratione?</blockquote>
                     <cite>- Jane Doe</cite>
                 </li>
                 <li>
-                    <img src="images/person.jpg" alt="">
+                    <img src="images/illustration.svg" alt="">
                     <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aperiam inventore cum numquam. Harum dolore quidem itaque praesentium cumque voluptas deleniti blanditiis, voluptatum velit voluptatem odio ducimus quisquam quas ratione?</blockquote>
                     <cite>- Jane Doe</cite>
                 </li>
@@ -84,7 +85,7 @@
     <section class="contact-section">
         <div class="container">
             <div class="contact-left">
-                <h2>Contact</h2>
+                <h2 id="contant">Contact</h2>
                 <form action="">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Carlos...">
@@ -100,5 +101,21 @@
             </div>
         </div>
     </section>
+    
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+    </script>
 </body>
 </html>
