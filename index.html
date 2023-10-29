@@ -1,157 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Juan Pena Resume</title>
-  </head>
-  <body>
-    <div class="navbar">
-      <div class="container">
-        <a class="logo" href="#">JuanPena<span>Dev</span></a>
-        <img
-          id="mobile-cta"
-          class="mobile-menu"
-          src="images/menu.svg"
-          alt="Open Navigation"
-        />
-        <nav>
-          <img
-            id="mobile-exit"
-            class="mobile-menu-exit"
-            src="images/exit.svg"
-            alt="Close Navigation"
-          />
-          <ul class="primary-nav">
-            <li class="current"><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Main Projects</a></li>
-          </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
 
-          <ul class="secondary-nav">
-            <li><a href="#contant">Contact</a></li>
-            <li class="contact-now-cta">
-              <a href="#">Check all my projects</a>
-            </li>
-            <!-- ctl class reference "call to action" -->
-          </ul>
-        </nav>
+  <header class="bg-dark text-white text-center py-5">
+    <h1>Juan Pena</h1>
+    <h2>Backend Developer</h2>
+    <a href="#contactForm" class="btn btn-primary">Contact Now</a>
+  </header>
+
+  <main class="container mt-4">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Project 1</h2>
+            <p class="card-text">Description of Project 1</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Project 2</h2>
+            <p class="card-text">Description of Project 2</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Project 2</h2>
+            <p class="card-text">Description of Project 2</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <section class="hero">
-      <div class="container">
-        <div class="left-col">
-          <p class="subhead">Software Developer</p>
-          <h1>Juan Pena</h1>
-          <div class="hero-cta">
-            <a href="" class="primary-cta">Contact Now!</a>
-            <a href="" class="github-cta">
-              <img width="25" src="images/github.svg" alt="github" />Go to my
-              Github
-            </a>
-          </div>
-        </div>
-        <img src="images/person.svg" class="hero-img" alt="illustration" />
-      </div>
-    </section>
-
-    <section class="skills-section">
-      <div class="container">
-        <h2 id="skills">Skills</h2>
-        <ul class="skills-list">
-          <li>Python</li>
-          <li>Django</li>
-          <li>SQL and NoSQl</li>
-          <li>Restful APIs</li>
-          <li>Git</li>
-          <li>Unit Testing</li>
-        </ul>
-        <img src="images/coding.png" alt="illustration" />
-      </div>
-    </section>
-
-    <section class="projects-section">
-      <div class="container">
-        <h2 id="projects">Projects</h2>
-        <ul>
-          <li>
-            <img src="images/illustration.svg" alt="" />
-            <blockquote>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              aperiam inventore cum numquam. Harum dolore quidem itaque
-              praesentium cumque voluptas deleniti blanditiis, voluptatum velit
-              voluptatem odio ducimus quisquam quas ratione?
-            </blockquote>
-            <cite>- Jane Doe</cite>
-          </li>
-          <li>
-            <img src="images/illustration.svg" alt="" />
-            <blockquote>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              aperiam inventore cum numquam. Harum dolore quidem itaque
-              praesentium cumque voluptas deleniti blanditiis, voluptatum velit
-              voluptatem odio ducimus quisquam quas ratione?
-            </blockquote>
-            <cite>- Jane Doe</cite>
-          </li>
-          <li>
-            <img src="images/illustration.svg" alt="" />
-            <blockquote>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              aperiam inventore cum numquam. Harum dolore quidem itaque
-              praesentium cumque voluptas deleniti blanditiis, voluptatum velit
-              voluptatem odio ducimus quisquam quas ratione?
-            </blockquote>
-            <cite>- Jane Doe</cite>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="contact-section">
-      <div class="container">
-        <div class="contact-left">
-          <h2 id="contant">Contact</h2>
-            <h3>Contact Links</h3>
-            <li>
-              <a href="https://www.linkedin.com/in/juan-pena-4457b5198"
-                >Linkedin</a>
-            </li>
-            <address>
-              <li><a href="mailto:juanpena7722@gmail.com">Email</a></li>
-              <li><a href="tel:+19739813037">+1(973)-981-3037</a></li>
-            </address>
-          </ul>
-        </div>
-        <div class="conact-rigth">
-          <form action="">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Carlos...">
-            <label for="email">email</label>
-            <input type="email" id="email" name="email" placeholder="example@host.com">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            <input type="submit" class="send-message-cta" value="send message">
-        </form>
+    <section class="contact-section mt-5">
+      <div class="card">
+        <div class="card-body">
+          <h3>Contact Me</h3>
+          <form id="contactForm" action="https://formspree.io/f/mqkvnjra" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" name="message" id="message" rows="3" placeholder="Your message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
       </div>
     </section>
+    
 
-<script>
-      const mobileBtn = document.getElementById("mobile-cta");
-      nav = document.querySelector("nav");
-      mobileBtnExit = document.getElementById("mobile-exit");
+  </main>
 
-      mobileBtn.addEventListener("click", () => {
-        nav.classList.add("menu-btn");
-      });
-
-      mobileBtnExit.addEventListener("click", () => {
-        nav.classList.remove("menu-btn");
-      });
-    </script>
-  </body>
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2023 Juan Pena</p>
+  </footer>
+  <script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
