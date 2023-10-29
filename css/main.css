@@ -1,5 +1,29 @@
 header {
   background-color: #343a40;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+header .header_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+header .header_left .action_buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+header .header_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+header .header_right p {
+  text-align: left;
+  width: 70%;
 }
 
 .card-title {
