@@ -17,6 +17,7 @@ header {
         display: flex;
         justify-content: space-between;
         width: 100%;
+        a{}
     }
 }
 
@@ -38,6 +39,9 @@ header {
 
 footer {
   background-color: $dark-color;
+  position: absolute;
+  width: 100%;
+   bottom: 0;
   p {
     color: #fff;
   }
