@@ -155,9 +155,16 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
-.progress-bars-wrapper {
+.about{
+  display: flex;
+  width: 50%;
+  font-size: 3rem;
+}
+
+/* .progress-bars-wrapper {
   margin-bottom: 10rem;
 }
 
@@ -190,7 +197,7 @@ html {
   background-color: #495bff8f;
   border-radius: 0.3rem;
   transition: width 0.5s 0.5s ease-in-out;
-}
+} */
 
 .services {
   width: 100%;
